@@ -1,21 +1,24 @@
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "3xl": "0 14px 37px hsl(0deg 3% 67% / 0%), 0 10px 10px rgb(0 0 0 / 8%)",
+      },
       colors: {
-
-        "footer-blue": "#040f26",
+        "custom-dark-blue": "#040f26",
         "primary-blue": "#19afff",
-        "orange": "#ef7c22",
-        "green": "#28a745"
+        orange: "#ef7c22",
+        green: "#28a745",
+        "light-green": "#eaf8f6",
       },
       fontFamily: {
-        "roboto": ['Roboto']
-      }
+        roboto: ["Roboto"],
+      },
     },
   },
   plugins: [],
-}
+};
