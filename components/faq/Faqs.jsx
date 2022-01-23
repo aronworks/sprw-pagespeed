@@ -1,4 +1,4 @@
-import Faq from "./faq";
+import Faq from "./Faq";
 
 const faqContent = [
   {

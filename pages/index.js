@@ -2,7 +2,7 @@ import AndroidApp from "../components/android-app/AndroidApp";
 import Faqs from "../components/faq/Faqs";
 import SkillSets from "../components/learning-platform/SkillSets";
 import Courses from "../components/programming/Courses";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer/Footer";
 import GameApp from "../public/assets/images/game-app.svg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar/NavBar";
