@@ -345,8 +345,8 @@ export default function NavBar() {
                 >
                   Login
                 </a>
-
               </div>
+
             </div>
           </div>
         </Popover.Panel>

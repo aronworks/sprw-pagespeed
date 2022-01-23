@@ -7,6 +7,7 @@ import GameApp from "../public/assets/images/game-app.svg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar/NavBar";
 import Testimonials from "../components/testimonials/Testimonials";
+import Button from "../components/button/Button";
 
 function DividerLine() {
   return (
@@ -140,6 +141,11 @@ export default function Home() {
               desc="A simple application to track the step count while we walk"
             />
           </div>
+          <div className="flex justify-between items-center mx-auto mt-10 w-[550px]">
+            <Button text="BUY NOW" color="green" />
+            <Button text="GET MORE DETAILS" />
+          </div>
+
         </div>
         <div className="flex justify-between items-center my-28">
           <div className="w-1/2 px-4">
@@ -157,6 +163,9 @@ export default function Home() {
               child will get. Developing interpersonal skills through the
               hands-on experiments is the highlight of this course
             </p>
+            <div className="flex justify-center mt-8">
+              <Button text="BUY NOW" color="green" />
+            </div>
           </div>
           <SkillSets />
         </div>
@@ -215,10 +224,12 @@ export default function Home() {
               Buy the Course for your child to experience the ultimate way to learn coding
               <br /> and join the community of 1 Lakh+ Students.</p>
             <span className="font-thin text-base">Price <span className=" ml-1 text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span> </span>
+            <div className="flex justify-between items-center mt-10 w-[550px]">
+              <Button text="BUY NOW" color="green" />
+              <Button text="GET MORE DETAILS" />
+            </div>
           </div>
         </div>
-
-
       </div>
       <Footer />
     </>
