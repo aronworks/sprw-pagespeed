@@ -4,6 +4,7 @@ import DifferentApps from "../components/build-app/DifferentApps"
 import SkillSets from "../components/learning-platform/SkillSets";
 import Courses from "../components/programming/Courses";
 import Footer from "../components/footer/footer";
+import NavBar from "../components/nav-bar/NavBar";
 
 
 export default function Home() {
@@ -32,7 +33,8 @@ export default function Home() {
       </div> */}
       {/* <Courses />
       <Faqs /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <NavBar />
     </section>
   )
 }
