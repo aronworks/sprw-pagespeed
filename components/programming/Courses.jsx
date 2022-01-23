@@ -1,5 +1,4 @@
 import CourseCard from "./CourseCard";
-import BuyIcon from "../../public/assets/images/buy.svg";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
