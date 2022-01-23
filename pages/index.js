@@ -2,7 +2,7 @@ import AndroidApp from "../components/android-app/AndroidApp";
 import Faqs from "../components/faq/Faqs";
 import SkillSets from "../components/learning-platform/SkillSets";
 import Courses from "../components/programming/Courses";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer/Footer";
 import GameApp from "../public/assets/images/game-app.svg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar/NavBar";
@@ -106,8 +106,8 @@ export default function Home() {
               What Android Apps will my child code and build?
             </h2>
             <p className="my-8 text-base">
-              The best part about learning here is "No Prior coding Knowledge is
-              Required"
+              The best part about learning here is &quot;No Prior coding
+              Knowledge is Required&quot;
             </p>
             <p className="mb-8 text-lg font-light">
               The entire course starts from the basics on how to code and is
@@ -144,18 +144,18 @@ export default function Home() {
         <div className="flex justify-between items-center my-28">
           <div className="w-1/2 px-4">
             <h2 className="text-primary-blue mb-4 text-[2rem] font-semibold">
-              India's #1 FUN <br />
+              India&apos;s #1 FUN <br />
               <span>LEARNING PLATFORM</span>
             </h2>
             <p className="font-normal text-[2rem] mb-4">
-              What's The Benefit For My Child?
+              What&apos;s The Benefit For My Child?
             </p>
             <p className="mb-4 font-light text-lg leading-[1.8]">
               The courses are specially designed by experts for ages 10+ to
               engage them well and useful. Coding and STEM Skills are essential
-              skills for your child, but that's not the only benefits your child
-              will get. Developing interpersonal skills through the hands-on
-              experiments is the highlight of this course
+              skills for your child, but that&apos;s not the only benefits your
+              child will get. Developing interpersonal skills through the
+              hands-on experiments is the highlight of this course
             </p>
           </div>
           <SkillSets />
@@ -179,7 +179,7 @@ export default function Home() {
             <h2 className="text-3xl font-light text-center w-3/4 m-auto leading-normal pt-16">
               Over 1 Lakh+ Parents like you from all over India have enrolled
               their child at SP Robotic Works and were thrilled with their
-              child's progress and enthusiasm to learn and explore tech.
+              child&apos;s progress and enthusiasm to learn and explore tech.
             </h2>
             <div className="flex justify-between items-center pt-16">
               <div className="w-[200px] flex flex-col items-center mb-24">
