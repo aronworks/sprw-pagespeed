@@ -6,11 +6,26 @@ import Footer from "../components/footer/footer";
 import GameApp from "../public/assets/images/game-app.svg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar/NavBar";
+import Testimonials from "../components/testimonials/Testimonials";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+function DividerLine() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1518 10"
+      className="w-full pt-20 pb-28"
+    >
+      <path
+        fill="none"
+        stroke="#bcccd5"
+        strokeDasharray="1 5"
+        strokeWidth="10"
+        d="M0 4.998h1518"
+        data-name="Path 28241"
+      ></path>
+    </svg>
+  );
+}
 
 function SingleAndroidApp({ image, title, desc }) {
   return (
@@ -175,257 +190,35 @@ export default function Home() {
               </div>
 
               <div className="w-[70%]">
-                <Swiper
-                  modules={[Navigation, Pagination, Scrollbar, A11y]}
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  pagination={{ clickable: true }}
-                  autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                  }}
-                  breakpoints={{
-                    768: {
-                      slidesPerView: 1,
-                    },
-                    1200: {
-                      slidesPerView: 2,
-                    },
-                  }}
-                >
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md mb-24">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="bg-white m-2 p-6 drop-shadow-md">
-                      <div className="flex items-center mb-6">
-                        <Image
-                          className=""
-                          src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/shobana-customer.png"
-                          width={70}
-                          height={70}
-                        />
-                        <div className="ml-4">
-                          <p className="font-medium">Shobana</p>
-                          <p className="font-light">
-                            Mother of Krishik Karthikeyan
-                          </p>
-                        </div>
-                      </div>
-                      <p className="font-light leading-relaxed">
-                        My son is always happy to go to Robotics class (with
-                        full smile & joy).I attribute this to the exemplary
-                        teaching and community feel of the class.It is indeed
-                        very motivating for parents and children to get such
-                        encouragement and platforms to be acknowledged for their
-                        good performance. Thank you once again for facilitating
-                        good learning.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
+                <Testimonials />
               </div>
             </div>
+
           </div>
           <TestimonialBg />
         </div>
       </div>
-
       <div className="w-5/6 max-w-[1300px] mx-auto">
         <Faqs />
+        <div>
+          <DividerLine />
+        </div>
+
+        <div className=" flex justify-between items-center mb-32">
+          <div className="w-1/2" >
+            <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/andriod-with-shield-maths-min.png" alt="Android App Course" height="427" width="650" />
+          </div>
+          <div className="w-1/2 ml-6">
+            <h2 className="text-3xl font-bold mb-2 mt-8 leading-tight">ANDROID APP ONLINE COURSE</h2>
+            <p className="font-normal mb-6 text-lg leading-relaxed">100+ Projects | Coding from Basics | Lifetime Access
+              <br />
+              Buy the Course for your child to experience the ultimate way to learn coding
+              <br /> and join the community of 1 Lakh+ Students.</p>
+            <span className="font-thin text-base">Price <span className=" ml-1 text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span> </span>
+          </div>
+        </div>
+
+
       </div>
       <Footer />
     </>
