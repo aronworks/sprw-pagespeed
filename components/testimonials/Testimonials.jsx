@@ -224,7 +224,7 @@ function Testimonials() {
         >
 
             {testimonials.map((value, index) => {
-                return <SwiperSlide>
+                return <SwiperSlide key={index}>
                     <div className="bg-white m-2 p-6 drop-shadow-md">
                         <div className="flex items-center mb-6">
                             <Image
