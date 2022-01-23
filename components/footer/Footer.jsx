@@ -36,8 +36,8 @@ function Footer() {
 
   return (
     <div className="py-20 bg-custom-dark-blue p-3">
-      <div className="w-5/6 mx-auto text-base font-normal leading-normal text-left text-white  ">
-        <div className="flex justify-between">
+      <div className="w-5/6 mx-auto text-base font-normal leading-normal text-left text-white">
+        <div className="flex flex-wrap justify-between">
           <div className="flex flex-col mb-12 ">
             <span className="mb-4 p-2">COMPANY</span>
             <Link href="/">
@@ -112,8 +112,8 @@ function Footer() {
           </div>
         </div>
         <hr className="border-t border-[#111c32] w-5/6 mx-auto mb-4 " />
-        <div className="flex justify-between text-lg font- font-medium">
-          <div className="my-4 p-2 w-[375px] ">
+        <div className="flex flex-wrap justify-between text-lg font-medium">
+          <div className="my-4 p-2 w-[375px]">
             <span className="font-medium text-lg mb-4 inline-block ">
               Subscribe News letter
             </span>

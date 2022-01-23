@@ -193,7 +193,6 @@ export default function Home() {
                 <Testimonials />
               </div>
             </div>
-
           </div>
           <TestimonialBg />
         </div>
@@ -205,20 +204,34 @@ export default function Home() {
         </div>
 
         <div className=" flex justify-between items-center mb-32">
-          <div className="w-1/2" >
-            <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/andriod-with-shield-maths-min.png" alt="Android App Course" height="427" width="650" />
+          <div className="w-1/2">
+            <Image
+              src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/andriod-with-shield-maths-min.png"
+              alt="Android App Course"
+              height="427"
+              width="650"
+            />
           </div>
           <div className="w-1/2 ml-6">
-            <h2 className="text-3xl font-bold mb-2 mt-8 leading-tight">ANDROID APP ONLINE COURSE</h2>
-            <p className="font-normal mb-6 text-lg leading-relaxed">100+ Projects | Coding from Basics | Lifetime Access
+            <h2 className="text-3xl font-bold mb-2 mt-8 leading-tight">
+              ANDROID APP ONLINE COURSE
+            </h2>
+            <p className="font-normal mb-6 text-lg leading-relaxed">
+              100+ Projects | Coding from Basics | Lifetime Access
               <br />
-              Buy the Course for your child to experience the ultimate way to learn coding
-              <br /> and join the community of 1 Lakh+ Students.</p>
-            <span className="font-thin text-base">Price <span className=" ml-1 text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span> </span>
+              Buy the Course for your child to experience the ultimate way to
+              learn coding
+              <br /> and join the community of 1 Lakh+ Students.
+            </p>
+            <span className="font-thin text-base">
+              Price{" "}
+              <span className=" ml-1 text-4xl mb-4 text-black font-bold">
+                {" "}
+                INR 11,999.00/-
+              </span>{" "}
+            </span>
           </div>
         </div>
-
-
       </div>
       <Footer />
     </>
