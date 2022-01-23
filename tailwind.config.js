@@ -11,8 +11,8 @@ module.exports = {
       colors: {
         "custom-dark-blue": "#040f26",
         "primary-blue": "#19afff",
-        orange: "#ef7c22",
-        green: "#28a745",
+        "custom-orange": "#ef7c22",
+        "custom-green": "#28a745",
         "light-green": "#eaf8f6",
       },
       fontFamily: {
