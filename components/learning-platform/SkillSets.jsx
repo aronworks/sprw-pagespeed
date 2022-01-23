@@ -381,11 +381,28 @@ function CognitiveAndStemSkills() {
   );
 }
 
+function BackGround() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1071.122 1035.231">
+      <g fill="#dbf4ff" data-name="Group 6775">
+        <path
+          d="M744.767 795.28c205.539-97.407 258.626-342.76 128.93-509.601s-309.786-184.443-404.99-141.763 76.218 282.627-148.83 428.23-82.735 278.402 39.588 294.67 179.761 25.87 385.302-71.535z"
+          data-name="Path 28114"
+        ></path>
+        <path
+          d="M198.472 525.268c20.71 5.247 22.653 39.734 13.605 56.768s-15.942 19.053-32.388 18.378-29.51-34.49-20.463-51.525 18.536-28.868 39.246-23.621z"
+          data-name="Path 28115"
+        ></path>
+      </g>
+    </svg>
+  );
+}
+
 function SkillSets() {
   return (
     <div className="flex flex-wrap w-1/2 px-4 box-border relative">
       <div className="absolute w-[650px] -z-10 -top-16 -left-24 sm:block hidden">
-        <img src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/learn-platfom-bg.svg" />
+        <BackGround />
       </div>
       <Skill
         icon={<LogicalThinkingSkills />}
