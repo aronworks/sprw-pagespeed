@@ -1,13 +1,16 @@
 import AndroidAppIcon from "./AndroidAppIcon";
-import TimerIcon from "../../public/assets/images/timer.svg";
+import Guidance from "../svg/Guidance";
+import LearnAnytime from "../svg/LearnAnytime";
+import Membership from "../svg/Membership";
+import Students from "../svg/Students";
 
 function AndroidApp() {
   return (
-    <div className=" w-1/2 flex justify-between flex-wrap  ">
-      <AndroidAppIcon icon={TimerIcon} caption=" Learn Anytime" />
-      <AndroidAppIcon icon={TimerIcon} caption="1:1 Personalised Guidance" />
-      <AndroidAppIcon icon={TimerIcon} caption=" 1 Lakh Students" />
-      <AndroidAppIcon icon={TimerIcon} caption=" Lifelong Membership" />
+    <div className=" w-8/12 flex justify-between flex-wrap  ">
+      <AndroidAppIcon icon={<LearnAnytime />} caption={<>Learn <br />Anytime</>} />
+      <AndroidAppIcon icon={<Guidance />} caption={<>1:1 Personalised <br />Guidance</>} />
+      <AndroidAppIcon icon={<Students />} caption={<>1 Lakh <br />Students</>} />
+      <AndroidAppIcon icon={<Membership />} caption={<>Lifelong <br />Membership</>} />
     </div>
   );
 }

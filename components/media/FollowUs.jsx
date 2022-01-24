@@ -1,7 +1,7 @@
 import Link from "next/link";
 function FollowUs() {
   return (
-    <div className="flex justify-between">
+    <div>
       <span className="block mb-4 ">Follow Us</span>
       <div className="flex justify-between">
         <Link href="/">

@@ -95,11 +95,25 @@ function QuoteIcon() {
   );
 }
 
+
+
 export default function Home() {
   return (
     <>
       <NavBar />
       <div className="w-5/6 max-w-[1300px] mx-auto">
+        <div className="flex justify-between items-center mt-3 w-8/12">
+          <div>
+            <div className="font-medium rounded inline-flex items-center text-xs uppercase mb-4 px-[6px] py-[10px] border border-custom-green">
+              <span className="mr-1">FOR AGES 10+</span>
+              <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/product-thumbs-up.png" height="15px" width="15px" alt="Thumps up" />
+            </div>
+            <h1 className="text-[27px] font-bold">India’s #1 Android App Course</h1>
+          </div>
+          <div className="w-1/2">
+            <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/banner-andoid.png" width="300px" height="280" />
+          </div>
+        </div>
         <AndroidApp />
         <div>
           <div className="text-center">
