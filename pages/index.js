@@ -84,7 +84,7 @@ function QuoteIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50.907 40.307"
-      className="w-10 lg:w-20 mb-4"
+      className="w-6 lg:w-20 mb-4"
     >
       <path
         fill="#00afff"
@@ -187,10 +187,10 @@ export default function Home() {
 
       <div className="bg-light-green pb-0 lg:py-12">
         <div className="w-5/6 max-w-[1300px] mx-auto">
-          <h2 className="text-center mb-12 text-[2rem] font-semibold">
+          <h2 className="text-center lg:mb-12 py-14 lg:pt-0 text-2xl lg:text-[2rem] font-semibold">
             How to Start Programming?
           </h2>
-          <div className="mx-12">
+          <div className="mx-0 lg:mx-12">
             <Courses />
           </div>
         </div>
@@ -199,16 +199,16 @@ export default function Home() {
       <div>
         <div className="relative lg:bg-transparent bg-[rgba(219,244,255,0.5)]">
           <div className="w-5/6 max-w-[1300px] mx-auto">
-            <h2 className=" text-base lg:text-3xl font-light text-center w-3/4 m-auto leading-normal pt-16">
+            <h2 className=" w-full lg:w-3/4 text-base lg:text-3xl font-light text-center m-auto leading-normal pt-0 lg:pt-16">
               Over 1 Lakh+ Parents like you from all over India have enrolled
               their child at SP Robotic Works and were thrilled with their
               child&apos;s progress and enthusiasm to learn and explore tech.
             </h2>
             <div className="flex flex-wrap justify-between items-center pt-16">
-              <div className="w-[200px] flex flex-col items-center mb-24 mx-auto">
+              <div className="w-[200px] flex flex-col items-center mb-4 lg:mb-24 mx-auto">
                 <QuoteIcon />
-                <h2 className="w-[200px] mb-4 text-lg lg:text-[2rem] text-center font-semibold">
-                  Parent <span>Testimonials</span>
+                <h2 className="w-[200px] lg:mb-4 text-xl lg:text-[2rem] text-center font-semibold">
+                  Parent <br /> <span>Testimonials</span>
                 </h2>
               </div>
 

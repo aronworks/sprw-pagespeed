@@ -1,7 +1,7 @@
 function CourseCard({ icon, caption, desc, count }) {
   return (
     <div className="relative drop-shadow rounded-2xl bg-white mb-20">
-      <div className="p-12 min-h-[317px]">
+      <div className="p-6 lg:p-12 min-h-[240px] lg:min-h-[317px]">
         <div className="mb-8 flex">
           <div className="w-[35px] h-auto">{icon}</div>
           <p className="font-medium w-28 mx-8 inline-block ">{caption}</p>

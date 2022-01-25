@@ -150,7 +150,7 @@ function Testimonials() {
 
       {testimonials.map((value, index) => {
         return <SwiperSlide key={index}>
-          <div className="bg-white m-2 p-6 drop-shadow-md">
+          <div className="bg-white m-0 lg:m-2 p-6 drop-shadow-md mb-24">
             <div className="flex items-center mb-6">
               <Image
                 alt="Avatar"
