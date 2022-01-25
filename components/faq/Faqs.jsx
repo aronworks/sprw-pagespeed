@@ -62,12 +62,12 @@ function Faqs() {
   return (
     <div className="my-20">
       <div className="text-center">
-        <h2 className="font-bold text-[2rem]">ANDROID CODING FAQ</h2>
-        <h3 className="mt-2 mb-8 text-lg font-light">
+        <h2 className="font-bold text-xl lg:text-[2rem]">ANDROID CODING FAQ</h2>
+        <h3 className="mt-2 mb-8 text-base lg:text-lg font-light">
           Best Android App Development Course for Kids to Learn & Code Apps
         </h3>
       </div>
-      <div className="question-wrap mx-8 mt-2">
+      <div className="mx-0 lg:mx-8 mt-2">
         {faqContent.map((value, index) => {
           return (
             <Faq key={index} question={value.question} answer={value.answer} />

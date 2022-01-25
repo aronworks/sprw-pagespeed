@@ -14,7 +14,7 @@ function DividerLine() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1518 10"
-      className="w-full pt-20 pb-28"
+      className="w-full pb-10 lg:pt-20 lg:pb-28 "
     >
       <path
         fill="none"
@@ -30,7 +30,7 @@ function DividerLine() {
 
 function SingleAndroidApp({ image, title, desc }) {
   return (
-    <div className="w-1/4 text-center m-0">
+    <div className="w-1/2 lg:w-1/4 text-center m-0">
       <Image src={image} alt="appone" height="168" width="200" />
       <div className="mx-[2rem] mt-4">
         <h2 className="text-xl font-medium mb-2 ">{title}</h2>
@@ -84,7 +84,7 @@ function QuoteIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50.907 40.307"
-      className="w-20 mb-4"
+      className="w-10 lg:w-20 mb-4"
     >
       <path
         fill="#00afff"
@@ -133,7 +133,7 @@ export default function Home() {
               and solve Problems.
             </p>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-wrap justify-between items-center">
             <SingleAndroidApp
               image={GameApp}
               title="Build Your Own Game"
@@ -155,9 +155,9 @@ export default function Home() {
               desc="A simple application to track the step count while we walk"
             />
           </div>
-          <div className="flex justify-between items-center mx-auto mt-10 w-[550px]">
+          <div className="flex flex-wrap items-center mt-10 w-full">
             <Button text="BUY NOW" color="green" />
-            <Button text="GET MORE DETAILS" />
+            <Button text="GET MORE DETAILS" customClass="lg:ml-10 ml-0" />
           </div>
 
         </div>
@@ -185,7 +185,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-light-green py-12">
+      <div className="bg-light-green pb-0 lg:py-12">
         <div className="w-5/6 max-w-[1300px] mx-auto">
           <h2 className="text-center mb-12 text-[2rem] font-semibold">
             How to Start Programming?
@@ -199,20 +199,20 @@ export default function Home() {
       <div>
         <div className="relative lg:bg-transparent bg-[rgba(219,244,255,0.5)]">
           <div className="w-5/6 max-w-[1300px] mx-auto">
-            <h2 className="text-3xl font-light text-center w-3/4 m-auto leading-normal pt-16">
+            <h2 className=" text-base lg:text-3xl font-light text-center w-3/4 m-auto leading-normal pt-16">
               Over 1 Lakh+ Parents like you from all over India have enrolled
               their child at SP Robotic Works and were thrilled with their
               child&apos;s progress and enthusiasm to learn and explore tech.
             </h2>
-            <div className="flex justify-between items-center pt-16">
-              <div className="w-[200px] flex flex-col items-center mb-24">
+            <div className="flex flex-wrap justify-between items-center pt-16">
+              <div className="w-[200px] flex flex-col items-center mb-24 mx-auto">
                 <QuoteIcon />
-                <h2 className="w-[200px] mb-4 text-[2rem] text-center font-semibold">
+                <h2 className="w-[200px] mb-4 text-lg lg:text-[2rem] text-center font-semibold">
                   Parent <span>Testimonials</span>
                 </h2>
               </div>
 
-              <div className="w-[70%]">
+              <div className=" w-full lg:w-[70%]">
                 <Testimonials />
               </div>
             </div>
@@ -226,8 +226,8 @@ export default function Home() {
           <DividerLine />
         </div>
 
-        <div className=" flex justify-between items-center mb-32">
-          <div className="w-1/2">
+        <div className="flex flex-wrap justify-between items-center mb-32">
+          <div className="lg:w-1/2 w-full">
             <Image
               src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/andriod-with-shield-maths-min.png"
               alt="Android App Course"
@@ -235,19 +235,19 @@ export default function Home() {
               width="650"
             />
           </div>
-          <div className="w-1/2 ml-6">
-            <h2 className="text-3xl font-bold mb-2 mt-8 leading-tight">
+          <div className="w-full lg:w-1/2 pl-0 lg:pl-6">
+            <h2 className="lg:text-3xl text-2xl font-bold mb-2 mt-8 leading-tight">
               ANDROID APP ONLINE COURSE
             </h2>
-            <p className="font-normal mb-6 text-lg leading-relaxed">
+            <p className="font-normal mb-6 text-base lg:text-lg leading-relaxed">
               100+ Projects | Coding from Basics | Lifetime Access
               <br />
               Buy the Course for your child to experience the ultimate way to learn coding
               <br /> and join the community of 1 Lakh+ Students.</p>
-            <span className="font-thin text-base">Price <span className=" ml-1 text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span> </span>
-            <div className="flex justify-between items-center mt-10 w-[550px]">
+            <span className="font-thin text-base">Price <span className="ml-1 text-3xl lg:text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span></span>
+            <div className="flex flex-wrap items-center mt-10 w-full">
               <Button text="BUY NOW" color="green" />
-              <Button text="GET MORE DETAILS" />
+              <Button text="GET MORE DETAILS" customClass="lg:ml-10 ml-0" />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 function Faq({ question, answer }) {
   return (
     <details className="group question border border-grey-lighter border-b-0 last:border-b first:rounded-tl first:rounded-tr last:rounded-bl last:rounded-br">
-      <summary className="flex items-center font-bold text-xl py-4 px-5 group-open:border-b cursor-pointer">
+      <summary className="flex items-center font-bold text-lg lg:text-xl py-4 px-5 group-open:border-b cursor-pointer">
         {question}
         <button className="ml-auto">
           <svg
@@ -24,7 +24,7 @@ function Faq({ question, answer }) {
           </svg>
         </button>
       </summary>
-      <div className="font-light text-lg pb-6 pt-4 px-5">{answer}</div>
+      <div className="font-light text-base lg:text-lg pb-6 pt-4 px-5">{answer}</div>
     </details>
   );
 }
