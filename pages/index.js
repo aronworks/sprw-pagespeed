@@ -8,6 +8,7 @@ import NavBar from "../components/nav-bar/NavBar";
 import Testimonials from "../components/testimonials/Testimonials";
 import Button from "../components/button/Button";
 import BuildAndroidApp from "../components/build-android-app/BuildAndroidApp";
+import Percentage from "../components/svg/Percentage"
 
 function DividerLine() {
   return (
@@ -124,11 +125,14 @@ export default function Home() {
             </p>
           </div>
           <BuildAndroidApp />
-          <div className="flex flex-wrap items-center mt-10 w-full">
-            <Button text="BUY NOW" color="green" />
-            <Button text="GET MORE DETAILS" customClass="lg:ml-10 ml-0" />
+          <div className="flex flex-wrap items-center justify-center mt-20 lg:w-1/2 w-full mx-auto">
+            <Button text="BUY NOW" color="green" customClass="mx-4" />
+            <Button text="GET MORE DETAILS" customClass="mx-4" />
           </div>
-
+          <div className="align-middle text-center mx-auto">
+            <Percentage />
+            <span className="ml-2"> <strong>EMI</strong>  starts at ₹2,046. No Cost EMI available</span>
+          </div>
         </div>
 
 
