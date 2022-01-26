@@ -86,26 +86,38 @@ function QuoteIcon() {
   );
 }
 
-
-
 export default function Home() {
   return (
     <>
       <NavBar />
       <div className="w-5/6 max-w-[1300px] mx-auto">
-        <div className="flex justify-between items-center mt-3 w-8/12">
-          <div>
-            <div className="font-medium rounded inline-flex items-center text-xs uppercase mb-4 px-[6px] py-[10px] border border-custom-green">
-              <span className="mr-1">FOR AGES 10+</span>
-              <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/product-thumbs-up.png" height="15px" width="15px" alt="Thumps up" />
+        <div className="">
+          <div className="flex flex-wrap justify-between items-center mt-3 lg:w-8/12 w-full">
+            <div className="w-full sm:w-1/2 pr-0 sm:pr-2">
+              <div className="font-medium rounded inline-flex items-baseline text-xs uppercase mb-4 px-[8px] py-[8px] border border-custom-green">
+                <span className="mr-2">FOR AGES 10+</span>
+                <Image
+                  src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/product-thumbs-up.png"
+                  height="15px"
+                  width="15px"
+                  alt="Thumps up"
+                />
+              </div>
+              <h1 className="sm:text-[27px] text-2xl font-bold">
+                India’s #1 Android App Course
+              </h1>
             </div>
-            <h1 className="text-[27px] font-bold">India’s #1 Android App Course</h1>
+            <div className="w-full sm:w-1/2">
+              <Image
+                src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/banner-andoid.png"
+                width="300px"
+                height="280"
+              />
+            </div>
           </div>
-          <div className="w-1/2">
-            <Image src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/banner-andoid.png" width="300px" height="280" />
-          </div>
+          <AndroidApp />
         </div>
-        <AndroidApp />
+
         <div>
           <div className="text-center">
             <h2 className="text-3xl font-bold ">
@@ -226,9 +238,17 @@ export default function Home() {
             <p className="font-normal mb-6 text-base lg:text-lg leading-relaxed">
               100+ Projects | Coding from Basics | Lifetime Access
               <br />
-              Buy the Course for your child to experience the ultimate way to learn coding
-              <br /> and join the community of 1 Lakh+ Students.</p>
-            <span className="font-thin text-base">Price <span className="ml-1 text-3xl lg:text-4xl mb-4 text-black font-bold"> INR 11,999.00/-</span></span>
+              Buy the Course for your child to experience the ultimate way to
+              learn coding
+              <br /> and join the community of 1 Lakh+ Students.
+            </p>
+            <span className="font-thin text-base">
+              Price{" "}
+              <span className="ml-1 text-3xl lg:text-4xl mb-4 text-black font-bold">
+                {" "}
+                INR 11,999.00/-
+              </span>
+            </span>
             <div className="flex flex-wrap items-center mt-10 w-full">
               <Button text="BUY NOW" color="green" />
               <Button text="GET MORE DETAILS" customClass="lg:ml-10 ml-0" />

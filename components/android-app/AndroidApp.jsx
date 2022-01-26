@@ -6,11 +6,43 @@ import Students from "../svg/Students";
 
 function AndroidApp() {
   return (
-    <div className=" w-8/12 flex justify-between flex-wrap mb-24">
-      <AndroidAppIcon icon={<LearnAnytime />} caption={<>Learn <br />Anytime</>} />
-      <AndroidAppIcon icon={<Guidance />} caption={<>1:1 Personalised <br />Guidance</>} />
-      <AndroidAppIcon icon={<Students />} caption={<>1 Lakh <br />Students</>} />
-      <AndroidAppIcon icon={<Membership />} caption={<>Lifelong <br />Membership</>} />
+    <div className="lg:w-8/12 w-full flex justify-between flex-wrap mb-24">
+      <AndroidAppIcon
+        icon={<LearnAnytime />}
+        caption={
+          <>
+            Learn <br />
+            Anytime
+          </>
+        }
+      />
+      <AndroidAppIcon
+        icon={<Guidance />}
+        caption={
+          <>
+            1:1 Personalised <br />
+            Guidance
+          </>
+        }
+      />
+      <AndroidAppIcon
+        icon={<Students />}
+        caption={
+          <>
+            1 Lakh <br />
+            Students
+          </>
+        }
+      />
+      <AndroidAppIcon
+        icon={<Membership />}
+        caption={
+          <>
+            Lifelong <br />
+            Membership
+          </>
+        }
+      />
     </div>
   );
 }
