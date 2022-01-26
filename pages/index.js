@@ -3,11 +3,11 @@ import Faqs from "../components/faq/Faqs";
 import SkillSets from "../components/learning-platform/SkillSets";
 import Courses from "../components/programming/Courses";
 import Footer from "../components/footer/Footer";
-import GameApp from "../public/assets/images/game-app.svg";
 import Image from "next/image";
 import NavBar from "../components/nav-bar/NavBar";
 import Testimonials from "../components/testimonials/Testimonials";
 import Button from "../components/button/Button";
+import BuildAndroidApp from "../components/build-android-app/BuildAndroidApp";
 
 function DividerLine() {
   return (
@@ -28,17 +28,7 @@ function DividerLine() {
   );
 }
 
-function SingleAndroidApp({ image, title, desc }) {
-  return (
-    <div className="w-1/2 lg:w-1/4 text-center m-0">
-      <Image src={image} alt="appone" height="168" width="200" />
-      <div className="mx-[2rem] mt-4">
-        <h2 className="text-xl font-medium mb-2 ">{title}</h2>
-        <p className="text-base">{desc}</p>
-      </div>
-    </div>
-  );
-}
+
 
 function TestimonialBg() {
   return (
@@ -133,56 +123,46 @@ export default function Home() {
               and solve Problems.
             </p>
           </div>
-          <div className="flex flex-wrap justify-between items-center">
-            <SingleAndroidApp
-              image={GameApp}
-              title="Build Your Own Game"
-              desc="Let your child learn to build cool Android game apps like Football!"
-            />
-            <SingleAndroidApp
-              image={GameApp}
-              title="Voice Recognition App"
-              desc="Let your child interact with the computer using voice recognition"
-            />
-            <SingleAndroidApp
-              image={GameApp}
-              title="GPS Locator App"
-              desc="Let them acquire the skills to build a Live Location tracker"
-            />
-            <SingleAndroidApp
-              image={GameApp}
-              title="Pedometer App"
-              desc="A simple application to track the step count while we walk"
-            />
-          </div>
+          <BuildAndroidApp />
           <div className="flex flex-wrap items-center mt-10 w-full">
             <Button text="BUY NOW" color="green" />
             <Button text="GET MORE DETAILS" customClass="lg:ml-10 ml-0" />
           </div>
 
         </div>
-        <div className="flex justify-between items-center my-28">
-          <div className="w-1/2 px-4">
-            <h2 className="text-primary-blue mb-4 text-[2rem] font-semibold">
-              India&apos;s #1 FUN <br />
-              <span>LEARNING PLATFORM</span>
-            </h2>
-            <p className="font-normal text-[2rem] mb-4">
-              What&apos;s The Benefit For My Child?
-            </p>
-            <p className="mb-4 font-light text-lg leading-[1.8]">
-              The courses are specially designed by experts for ages 10+ to
-              engage them well and useful. Coding and STEM Skills are essential
-              skills for your child, but that&apos;s not the only benefits your
-              child will get. Developing interpersonal skills through the
-              hands-on experiments is the highlight of this course
-            </p>
-            <div className="flex justify-center mt-8">
-              <Button text="BUY NOW" color="green" />
+
+
+        <div className="lg:my-28 my-16">
+          <div className="flex flex-wrap justify-between items-center">
+            <div className="lg:w-1/2 w-full px-4">
+              <h2 className="text-primary-blue mb-4 lg:text-[2rem] text-2xl font-semibold">
+                India&apos;s #1 FUN <br />
+                <span>LEARNING PLATFORM</span>
+              </h2>
+              <p className="font-normal lg:text-[2rem] text-lg mb-4">
+                What&apos;s The Benefit For My Child?
+              </p>
+              <p className="mb-4 font-light lg:text-lg text-sm leading-[1.8]">
+                The courses are specially designed by experts for ages 10+ to
+                engage them well and useful. Coding and STEM Skills are essential
+                skills for your child, but that&apos;s not the only benefits your
+                child will get. Developing interpersonal skills through the
+                hands-on experiments is the highlight of this course
+              </p>
+              <div className="lg:flex justify-center mt-8 hidden">
+                <Button text="BUY NOW" color="green" />
+              </div>
             </div>
+            <SkillSets />
           </div>
-          <SkillSets />
+          <div className="flex justify-center mt-4 lg:hidden">
+            <Button text="BUY NOW" color="green" />
+          </div>
+
         </div>
+
+
+
       </div>
 
       <div className="bg-light-green pb-0 lg:py-12">
@@ -226,7 +206,7 @@ export default function Home() {
           <DividerLine />
         </div>
 
-        <div className="flex flex-wrap justify-between items-center mb-32">
+        <div className="flex flex-wrap justify-between items-center mb-14 lg:mb-32">
           <div className="lg:w-1/2 w-full">
             <Image
               src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/andriod-with-shield-maths-min.png"
@@ -236,7 +216,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 pl-0 lg:pl-6">
-            <h2 className="lg:text-3xl text-2xl font-bold mb-2 mt-8 leading-tight">
+            <h2 className="text-3xl font-bold mb-2 mt-8 leading-tight">
               ANDROID APP ONLINE COURSE
             </h2>
             <p className="font-normal mb-6 text-base lg:text-lg leading-relaxed">

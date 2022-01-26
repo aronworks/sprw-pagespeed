@@ -60,10 +60,10 @@ const faqContent = [
 
 function Faqs() {
   return (
-    <div className="my-20">
+    <div className="lg:my-20 mt-12 mb-20">
       <div className="text-center">
-        <h2 className="font-bold text-xl lg:text-[2rem]">ANDROID CODING FAQ</h2>
-        <h3 className="mt-2 mb-8 text-base lg:text-lg font-light">
+        <h2 className="font-bold lg:text-[2rem] text-[22px]">ANDROID CODING FAQ</h2>
+        <h3 className="lg:mt-2 lg:mb-8 text-lg lg:text-xl font-light my-8 ">
           Best Android App Development Course for Kids to Learn & Code Apps
         </h3>
       </div>
