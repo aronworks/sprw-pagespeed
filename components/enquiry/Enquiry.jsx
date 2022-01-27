@@ -165,9 +165,16 @@ function Enquiry({ title, tagLine, btnText }) {
           </div>
         </form>
         <div className="flex items-center">
-          <input type="checkbox" id="receive_update" />
+          <input
+            type="checkbox"
+            id="receive_update"
+            className="cursor-pointer"
+          />
 
-          <label className="text-sm font-light ml-2" for="receive_update">
+          <label
+            className="text-sm font-light ml-2 cursor-pointer"
+            htmlFor="receive_update"
+          >
             Receive updates about my child and courses on
             <svg
               xmlns="http://www.w3.org/2000/svg"
