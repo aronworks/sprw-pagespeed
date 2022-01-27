@@ -120,23 +120,21 @@ export default function NavBar() {
                             </div>
                           </div>
                           <div className="relative grid gap-6 bg-white px-5 py-6">
-                            <a
-                              href="/"
-                              className="-m-3 p-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <p className="text-sm text-center font-medium text-gray-900">
-                                Electro-Blocks Kit
-                              </p>
-                            </a>
+                            <Link href="/">
+                              <a className="-m-3 p-3 rounded-lg hover:bg-gray-50">
+                                <p className="text-sm text-center font-medium text-gray-900">
+                                  Electro-Blocks Kit
+                                </p>
+                              </a>
+                            </Link>
 
-                            <a
-                              href="/"
-                              className="-m-3 p-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <p className="text-sm text-center font-medium text-gray-900">
-                                Scratch Programming Course
-                              </p>
-                            </a>
+                            <Link href="/">
+                              <a className="-m-3 p-3 rounded-lg hover:bg-gray-50">
+                                <p className="text-sm text-center font-medium text-gray-900">
+                                  Scratch Programming Course
+                                </p>
+                              </a>
+                            </Link>
                           </div>
                           <div className="px-3 py-3 bg-gray-50">
                             <div className="text-center text-sm font-medium text-gray-500">
@@ -144,23 +142,22 @@ export default function NavBar() {
                             </div>
                           </div>
                           <div className="relative grid gap-6 bg-white px-5 py-6">
-                            <a
-                              href="/"
-                              className="-m-3 p-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <p className="text-sm text-center font-medium text-gray-900">
-                                Codey Inventor Kit
-                              </p>
-                            </a>
+                            <Link href="/">
+                              <a className="-m-3 p-3 rounded-lg hover:bg-gray-50">
+                                <p className="text-sm text-center font-medium text-gray-900">
+                                  Codey Inventor Kit
+                                </p>
+                              </a>
+                            </Link>
 
-                            <a
-                              href="/"
-                              className="-m-3 p-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <p className="text-sm text-center font-medium text-gray-900">
-                                Android App Course
-                              </p>
-                            </a>
+                            <Link href="/">
+                              <a className="-m-3 p-3 rounded-lg hover:bg-gray-50">
+                                <p className="text-sm text-center font-medium text-gray-900">
+                                  Android App Course
+                                </p>
+                              </a>
+                            </Link>
+
                             <div className="text-sm -m-3 p-3 text-center">
                               <a
                                 href="#"
