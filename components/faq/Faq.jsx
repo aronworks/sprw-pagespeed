@@ -24,7 +24,9 @@ function Faq({ question, answer }) {
           </svg>
         </button>
       </summary>
-      <div className="font-light text-base lg:text-lg pb-6 pt-4 px-5">{answer}</div>
+      <div className="font-light text-base lg:text-lg pb-6 pt-4 px-5">
+        {answer}
+      </div>
     </details>
   );
 }

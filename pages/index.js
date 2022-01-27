@@ -89,10 +89,10 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="w-5/6 max-w-[1300px] mx-auto">
-        <div className="flex flex-wrap">
-          <div>
-            <div className="flex flex-wrap justify-between items-center mt-3 lg:w-8/12 w-full">
+      <div className="xl:w-5/6 w-11/12 max-w-[1300px] mx-auto">
+        <div className="flex flex-wrap justify-between mt-8 mb-24">
+          <div className="lg:w-[65%] w-full">
+            <div className="flex flex-wrap justify-between items-center mt-3">
               <div className="w-full sm:w-1/2 pr-0 sm:pr-2">
                 <div className="font-medium rounded inline-flex items-baseline text-xs uppercase mb-4 px-[8px] py-[8px] border border-custom-green">
                   <span className="mr-2">FOR AGES 10+</span>
@@ -118,7 +118,7 @@ export default function Home() {
             <AndroidApp />
           </div>
 
-          <div>
+          <div className="lg:w-[32%] w-full lg:mt-0 mt-4">
             <Enquiry />
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
             </p>
           </div>
           <BuildAndroidApp />
-          <div className="flex flex-wrap items-center justify-center mt-20 lg:w-1/2 w-full mx-auto">
+          <div className="flex flex-wrap items-center justify-center lg:mt-20 mt-5 lg:w-1/2 w-full mx-auto">
             <Button text="BUY NOW" color="green" customClass="mx-4" />
             <Button text="GET MORE DETAILS" customClass="mx-4" />
           </div>

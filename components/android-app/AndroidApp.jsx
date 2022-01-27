@@ -6,7 +6,7 @@ import Students from "../svg/Students";
 
 function AndroidApp() {
   return (
-    <div className="lg:w-8/12 w-full flex justify-between flex-wrap mb-24">
+    <div className="flex justify-between flex-wrap">
       <AndroidAppIcon
         icon={<LearnAnytime />}
         caption={

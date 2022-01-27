@@ -2,7 +2,9 @@ import Link from "next/link";
 function FollowUs() {
   return (
     <div>
-      <span className="block mb-4 ">Follow Us</span>
+      <span className="block lg:mb-4 mb-10 text-center lg:text-left">
+        Follow Us
+      </span>
       <div className="flex justify-between">
         <Link href="/">
           <a className="mb-3 mx-3 hover:text-primary-blue">
