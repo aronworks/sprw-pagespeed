@@ -8,7 +8,8 @@ import NavBar from "../components/nav-bar/NavBar";
 import Testimonials from "../components/testimonials/Testimonials";
 import Button from "../components/button/Button";
 import BuildAndroidApp from "../components/build-android-app/BuildAndroidApp";
-import Percentage from "../components/svg/Percentage"
+import Percentage from "../components/svg/Percentage";
+import Enquiry from "../components/enquiry/Enquiry";
 
 function DividerLine() {
   return (
@@ -28,8 +29,6 @@ function DividerLine() {
     </svg>
   );
 }
-
-
 
 function TestimonialBg() {
   return (
@@ -91,31 +90,37 @@ export default function Home() {
     <>
       <NavBar />
       <div className="w-5/6 max-w-[1300px] mx-auto">
-        <div className="">
-          <div className="flex flex-wrap justify-between items-center mt-3 lg:w-8/12 w-full">
-            <div className="w-full sm:w-1/2 pr-0 sm:pr-2">
-              <div className="font-medium rounded inline-flex items-baseline text-xs uppercase mb-4 px-[8px] py-[8px] border border-custom-green">
-                <span className="mr-2">FOR AGES 10+</span>
+        <div className="flex flex-wrap">
+          <div>
+            <div className="flex flex-wrap justify-between items-center mt-3 lg:w-8/12 w-full">
+              <div className="w-full sm:w-1/2 pr-0 sm:pr-2">
+                <div className="font-medium rounded inline-flex items-baseline text-xs uppercase mb-4 px-[8px] py-[8px] border border-custom-green">
+                  <span className="mr-2">FOR AGES 10+</span>
+                  <Image
+                    src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/product-thumbs-up.png"
+                    height="15px"
+                    width="15px"
+                    alt="Thumps up"
+                  />
+                </div>
+                <h1 className="sm:text-[27px] text-2xl font-bold">
+                  India’s #1 Android App Course
+                </h1>
+              </div>
+              <div className="w-full sm:w-1/2">
                 <Image
-                  src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/All-course-2021/product-thumbs-up.png"
-                  height="15px"
-                  width="15px"
-                  alt="Thumps up"
+                  src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/banner-andoid.png"
+                  width="300px"
+                  height="280"
                 />
               </div>
-              <h1 className="sm:text-[27px] text-2xl font-bold">
-                India’s #1 Android App Course
-              </h1>
             </div>
-            <div className="w-full sm:w-1/2">
-              <Image
-                src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/v2/banner-andoid.png"
-                width="300px"
-                height="280"
-              />
-            </div>
+            <AndroidApp />
           </div>
-          <AndroidApp />
+
+          <div>
+            <Enquiry />
+          </div>
         </div>
 
         <div>
@@ -143,10 +148,12 @@ export default function Home() {
           </div>
           <div className="align-middle text-center mx-auto">
             <Percentage />
-            <span className="ml-2"> <strong>EMI</strong>  starts at ₹2,046. No Cost EMI available</span>
+            <span className="ml-2">
+              {" "}
+              <strong>EMI</strong> starts at ₹2,046. No Cost EMI available
+            </span>
           </div>
         </div>
-
 
         <div className="lg:my-28 my-16">
           <div className="flex flex-wrap justify-between items-center">
@@ -160,10 +167,10 @@ export default function Home() {
               </p>
               <p className="mb-4 font-light lg:text-lg text-sm leading-[1.8]">
                 The courses are specially designed by experts for ages 10+ to
-                engage them well and useful. Coding and STEM Skills are essential
-                skills for your child, but that&apos;s not the only benefits your
-                child will get. Developing interpersonal skills through the
-                hands-on experiments is the highlight of this course
+                engage them well and useful. Coding and STEM Skills are
+                essential skills for your child, but that&apos;s not the only
+                benefits your child will get. Developing interpersonal skills
+                through the hands-on experiments is the highlight of this course
               </p>
               <div className="lg:flex justify-center mt-8 hidden">
                 <Button text="BUY NOW" color="green" />
@@ -174,11 +181,7 @@ export default function Home() {
           <div className="flex justify-center mt-4 lg:hidden">
             <Button text="BUY NOW" color="green" />
           </div>
-
         </div>
-
-
-
       </div>
 
       <div className="bg-light-green pb-0 lg:py-12">
