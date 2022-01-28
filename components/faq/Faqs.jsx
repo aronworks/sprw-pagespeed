@@ -62,7 +62,9 @@ function Faqs() {
   return (
     <div className="lg:my-20 mt-12 mb-20">
       <div className="text-center">
-        <h2 className="font-bold lg:text-[2rem] text-[22px]">ANDROID CODING FAQ</h2>
+        <h2 className="font-bold lg:text-[2rem] text-[22px]">
+          ANDROID CODING FAQ
+        </h2>
         <h3 className="lg:mt-2 lg:mb-8 text-lg lg:text-xl font-light my-8 ">
           Best Android App Development Course for Kids to Learn & Code Apps
         </h3>
