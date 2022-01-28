@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 function Testimonials() {
   const testimonials = [
@@ -129,7 +131,7 @@ function Testimonials() {
   ];
   return (
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={20}
       slidesPerView={1}
       pagination={{ clickable: true }}
@@ -151,7 +153,12 @@ function Testimonials() {
           <SwiperSlide key={index}>
             <div className="bg-white m-0 lg:m-2 p-6 drop-shadow-md mb-24 lg:mb-24">
               <div className="flex items-center mb-6">
-                <Image alt="Avatar" src={value.image} width={70} height={70} />
+                <Image
+                  alt={value.name}
+                  src={value.image}
+                  width={70}
+                  height={70}
+                />
                 <div className="ml-4">
                   <p className="font-medium">{value.name}</p>
                   <p className="font-light">{value.relation}</p>

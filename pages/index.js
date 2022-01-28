@@ -207,7 +207,8 @@ export default function Home() {
               <div className="w-[200px] flex flex-col items-center mb-4 lg:mb-24 mx-auto">
                 <QuoteIcon />
                 <h2 className="w-[200px] lg:mb-4 text-xl lg:text-[2rem] text-center font-semibold">
-                  Parent <br /> <span>Testimonials</span>
+                  Parent <br />{" "}
+                  <span className="block lg:mt-2 mt-0">Testimonials</span>
                 </h2>
               </div>
 

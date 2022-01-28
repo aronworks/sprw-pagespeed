@@ -1,9 +1,10 @@
 import CourseCard from "./CourseCard";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 function BuyCourseOnlineIcon() {
   return (
@@ -189,7 +190,7 @@ function Courses() {
   return (
     <div>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={80}
         slidesPerView={1}
         pagination={{ clickable: false }}

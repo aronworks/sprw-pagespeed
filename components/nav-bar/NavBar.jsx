@@ -195,7 +195,7 @@ export default function NavBar() {
               </a>
               <a
                 href="#"
-                className="ml-8 text-sm xl:text-base whitespace-nowrap inline-flex items-center justify-center xl:px-4 py-2 px-3 border border-transparent shadow-sm font-medium text-white bg-primary-blue w-20 xl:w-28"
+                className="ml-8 text-sm xl:text-base whitespace-nowrap inline-flex items-center justify-center xl:px-4 py-2 px-3 border border-transparent shadow-sm font-medium text-white bg-primary-blue w-20 xl:w-28 hover:border-primary-blue hover:text-primary-blue hover:bg-white transition duration-300 ease-in-out"
               >
                 Login
               </a>
