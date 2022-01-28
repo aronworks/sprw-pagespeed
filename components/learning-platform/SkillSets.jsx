@@ -7,7 +7,7 @@ import BackGround from "../svg/BackGround";
 
 function SkillSets() {
   return (
-    <div className="flex flex-wrap lg:w-1/2 w-full px-4 box-border relative lg:mt-o mt-6">
+    <div className="flex flex-wrap xl:w-1/2 w-full xl:mx-0 lg:mx-40 xl:mb-0 lg:mb-10 px-4 box-border relative lg:mt-o mt-6">
       <div className="absolute w-[650px] -z-10 -top-16 -left-24 sm:block hidden">
         <BackGround />
       </div>

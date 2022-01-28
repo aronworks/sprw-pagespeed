@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
 import {
   BookmarkAltIcon,
@@ -64,7 +65,7 @@ function classNames(...classes) {
 export default function NavBar() {
   return (
     <Popover className="relative bg-white drop-shadow">
-      <div className=" mx-auto px-4 sm:px-6 max-w-[91%]">
+      <div className="mx-auto px-4 sm:px-6 max-w-[91%]">
         <div className="flex justify-between items-center py-5 lg:justify-start xl:space-x-10 space-x-5">
           <div className="flex justify-start">
             <Link href="/">
@@ -85,12 +86,16 @@ export default function NavBar() {
               as="nav"
               className="hidden lg:flex xl:space-x-10 space-x-5 lg:items-center"
             >
-              <a
-                href="#"
-                className="text-sm xl:text-base font-medium hover:text-gray-900"
-              >
-                NCRC
-              </a>
+              <div className="relative">
+                <img className="absolute -left-[24px] -top-[9px] rotate-[330deg]" src="https://storage.googleapis.com/sproboticworks/master/assets/images/marketing/ncrc/image-new-tag.png" height="14px" width="40px" />
+                <a
+                  href="#"
+                  className="text-sm xl:text-base font-medium hover:text-gray-900"
+                >
+                  NCRC
+                </a>
+              </div>
+
 
               <Popover className="relative">
                 {({ open }) => (

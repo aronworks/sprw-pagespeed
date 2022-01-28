@@ -35,7 +35,7 @@ function TestimonialBg() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 960 940"
-      className="absolute max-w-full right-0 w-[606px] top-[140px] -z-10 lg:block hidden"
+      className="absolute max-w-full right-0 w-[606px] top-[140px] -z-10 xl:block hidden"
     >
       <defs>
         <clipPath id="a">
@@ -74,7 +74,7 @@ function QuoteIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50.907 40.307"
-      className="w-6 lg:w-20 mb-4"
+      className="w-6 xl:w-20 mb-4"
     >
       <path
         fill="#00afff"
@@ -103,7 +103,7 @@ export default function Home() {
                     alt="Thumps up"
                   />
                 </div>
-                <h1 className="sm:text-[27px] text-2xl font-bold">
+                <h1 className="sm:text-[27px] text-2xl font-bold lg:leading-[1.2] lg:mb-8">
                   India’s #1 Android App Course
                 </h1>
               </div>
@@ -125,14 +125,14 @@ export default function Home() {
 
         <div>
           <div className="text-center">
-            <h2 className="text-3xl font-bold ">
+            <h2 className="lg:text-3xl text-2xl font-bold ">
               What Android Apps will my child code and build?
             </h2>
             <p className="my-8 text-base">
               The best part about learning here is &quot;No Prior coding
               Knowledge is Required&quot;
             </p>
-            <p className="mb-8 text-lg font-light">
+            <p className="mb-8 lg:text-lg text-base font-light">
               The entire course starts from the basics on how to code and is
               loaded with fun experiments that your child will enjoy. Each
               chapter will teach a new concept to your child and let him/her
@@ -157,7 +157,7 @@ export default function Home() {
 
         <div className="lg:my-28 my-16">
           <div className="flex flex-wrap justify-between items-center">
-            <div className="lg:w-1/2 w-full px-4">
+            <div className="xl:w-1/2 w-full px-4">
               <h2 className="text-primary-blue mb-4 lg:text-[2rem] text-2xl font-semibold">
                 India&apos;s #1 FUN <br />
                 <span>LEARNING PLATFORM</span>
@@ -172,20 +172,20 @@ export default function Home() {
                 benefits your child will get. Developing interpersonal skills
                 through the hands-on experiments is the highlight of this course
               </p>
-              <div className="lg:flex justify-center mt-8 hidden">
+              <div className="xl:flex justify-center mt-8 hidden">
                 <Button text="BUY NOW" color="green" />
               </div>
             </div>
             <SkillSets />
           </div>
-          <div className="flex justify-center mt-4 lg:hidden">
+          <div className="flex justify-center mt-4 lg:mt-14 xl:hidden">
             <Button text="BUY NOW" color="green" />
           </div>
         </div>
       </div>
 
       <div className="bg-light-green pb-0 lg:py-12">
-        <div className="w-5/6 max-w-[1300px] mx-auto">
+        <div className="xl:w-5/6 w-11/12 max-w-[1300px] mx-auto">
           <h2 className="text-center lg:mb-12 py-14 lg:pt-0 text-2xl lg:text-[2rem] font-semibold">
             How to Start Programming?
           </h2>
@@ -197,14 +197,14 @@ export default function Home() {
 
       <div>
         <div className="relative lg:bg-transparent bg-[rgba(219,244,255,0.5)]">
-          <div className="w-5/6 max-w-[1300px] mx-auto">
+          <div className="xl:w-5/6 w-11/12 max-w-[1300px] mx-auto">
             <h2 className=" w-full lg:w-3/4 text-base lg:text-3xl font-light text-center m-auto leading-normal pt-0 lg:pt-16">
               Over 1 Lakh+ Parents like you from all over India have enrolled
               their child at SP Robotic Works and were thrilled with their
               child&apos;s progress and enthusiasm to learn and explore tech.
             </h2>
             <div className="flex flex-wrap justify-between items-center pt-16">
-              <div className="w-[200px] flex flex-col items-center mb-4 lg:mb-24 mx-auto">
+              <div className="w-[200px] flex flex-col items-center mb-4 xl:mb-24 mx-auto">
                 <QuoteIcon />
                 <h2 className="w-[200px] lg:mb-4 text-xl lg:text-[2rem] text-center font-semibold">
                   Parent <br />{" "}
@@ -212,7 +212,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className=" w-full lg:w-[70%]">
+              <div className=" w-full xl:w-[70%]">
                 <Testimonials />
               </div>
             </div>
@@ -220,7 +220,8 @@ export default function Home() {
           <TestimonialBg />
         </div>
       </div>
-      <div className="w-5/6 max-w-[1300px] mx-auto">
+
+      <div className="xl:w-5/6 w-11/12 max-w-[1300px] mx-auto">
         <Faqs />
         <div>
           <DividerLine />
